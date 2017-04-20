@@ -1,0 +1,449 @@
+/* Fonts, Colors
+
+font-family: 'Montserrat', sans-serif;
+font-weight: 400, 500, 700;
+
+colors: #59253a, #d1726c, #b3b8bb
+*/
+
+/* Global Layout */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* General 
+************/
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    color: #59253a;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    position: relative;  
+}
+
+body::after {
+  content: "";
+  background: url('../img/background.jpg') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+
+.wrap {
+	margin: 0 auto;
+	max-width: 290px;
+}
+
+#intro {
+    max-width: 290px;
+    margin: 0 auto;
+}
+
+#intro h3 {
+    color: #fff;
+    font-weight: 500;
+}
+
+#intro p,
+#copyright {
+    color: #fff;
+}
+
+p,
+label,
+#state select {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+legend {
+    color: #59253a;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.background_color {
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 0;
+    background:rgba(255,255,255, 0.7);
+}
+
+
+/* Header 
+***********/
+
+header {
+	background-color: #59253a;
+    height: 70px;
+}
+
+header h3 {
+	color: #fff;
+    font-weight: 500;
+	line-height: 70px;
+}
+
+header h3 {
+	margin: 0;
+}
+
+header,
+#intro {
+	text-align: center;
+}
+
+.rt_bracket:before {
+  content: '<';
+  color: #d1726c;
+}
+
+.lft_bracket:after {
+  content: '>';
+  color: #d1726c;
+}
+
+
+/* Placeholder Text
+********************/
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: .85em;
+  font-weight: 400;
+  font-style: italic;
+  text-align: right;
+  line-height: 20px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: .85em;
+  font-weight: 400;
+  font-style: italic;
+  text-align: right;
+  line-height: 20px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: .85em;
+  font-weight: 400;
+  font-style: italic;
+  text-align: right;
+  line-height: 20px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: .85em;
+  font-weight: 400;
+  font-style: italic;
+  text-align: right;
+  line-height: 20px;
+}
+
+#state select {
+  color: #b3b8bb;
+
+}
+
+select{
+    box-shadow: none !important;
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none;  /*Removes default style Firefox*/
+    background: url('../img/select-arrow.png') no-repeat right #fff;
+    background-position: 95%;
+}
+
+/* Label Text Fields 
+*********************/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    font-size: 16px;
+    background-color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+
+/* Button & Copyright
+**********************/
+
+button {
+    color: #fff;
+    background-color: #59253a;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+}
+
+#copyright {
+    text-align: center;
+    font-style: italic;
+    font-size: .75em;
+}
+
+
+/* Line Styles
+***************/
+
+
+.line_double {
+    height: 9px;
+    border-top: 4px solid #91485c;
+    border-bottom: 2px solid #91485c;
+}
+
+.line_single {
+    margin: 10px 0 5px; 
+    height: 2px;
+    border-bottom: 2px solid #59253a;
+}
+
+.line_single,
+.line_double {
+    width: 100%;
+}
+
+
+/* Signup for..
+*****************/
+
+#intro h3 {
+    margin: 30px 0 10px;
+    font-size: 1.3em;
+}
+
+#intro p {
+    margin: 0 0 35px;
+    font-size: 1em;
+}
+
+
+/* Form Styling
+*****************/
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    padding: 25px 0;
+    border: none;
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 0 auto;
+}
+
+form,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea,
+button {
+    width: 100%;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+	height: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	border: none;
+    border-radius: 5px;
+    padding: 15px; 
+    margin: 0;
+    outline: 0;
+    margin-bottom: 20px;
+}
+
+#zip_code {
+    height: 50px;
+    width: 150px;
+}
+
+
+/* Newsletter + Comments 
+***********************/
+
+#newsletter label {
+    display: inline-block;
+}
+
+.group {
+    margin: 10px 0 20px;
+}
+
+textarea {
+    height: 100px;
+    margin-top: 10px;
+    resize: none;
+}
+
+
+/* Checkbox and Radio
+**********************/
+
+input[type="radio"],
+input[type="checkbox"]{
+    /* Hide original inputs */
+    visibility: hidden;
+    position: absolute;
+  }
+
+input[type="radio"] + label:before,
+input[type="checkbox"] + label:before{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    content: " ";
+    display: inline-block;
+    vertical-align: text-top;
+    border: none;
+    background-color: #fff;
+  }
+
+
+/* Custom Radio & Checkbox Styles
+**********************************/
+
+input[type=radio] + label:before{
+    border-radius:50%;
+    }
+
+input[type="checkbox"]:checked + label:before {
+    background:url('../img/check.jpg') left top no-repeat;
+  }
+  
+input[type="radio"]:checked + label:before {
+    border: #8f3a41 solid 3px;
+    background-color: #fff; 
+
+  }
+
+
+/* Focus Styles */
+
+select {
+    outline: 0;
+}
+
+input:focus,
+textarea:focus,
+option:focus,
+select:focus{
+    outline: 0;
+    border: 3px solid #8f3a41;
+    color: #000;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button & Copyright
+*********************/
+
+button {
+    padding: 19px 39px 18px 39px;
+    border-radius: 5px;
+    height: 60px;
+    border: none;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+
+#copyright {
+	margin-bottom: 0;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+
+/* MEDIA QUERIES 
+***************/
+
+@media screen and (min-width: 768px) {
+
+body {
+    background-size: 100%;
+  }
+    
+.background_color {
+    max-width: 630px;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+    
+#intro {
+        max-width: 760px;
+    }
+
+#intro h3 {
+    margin: 50px 0 10px;
+    font-size: 1.47em;
+  }
+
+#intro p {
+    margin: 0 0 50px;
+  }
+
+  /* 760px: Forms */
+
+legend {
+    padding-top: 50px;
+  }
+
+label {
+    font-weight: 400;
+  }
+
+#contact_info label {
+    width: 150px;
+    line-height: 50px;
+    display: inline-block;
+    float: left;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  #state,
+  select {
+    width: 440px;
+    display: inline-block;
+  }
+}
+
